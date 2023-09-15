@@ -71,7 +71,15 @@ local plugins = {
       }
     end,
     lazy = false,
+  },  
+  {
+    "Shatur/neovim-session-manager",
+    config = function()
+      require("session_manager").setup({})
+    end,
+    lazy = false
   },
+
 }
 
 return plugins
