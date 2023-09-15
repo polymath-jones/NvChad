@@ -78,7 +78,13 @@ local plugins = {
       require("session_manager").setup({})
     end,
     lazy = false
+  }, 
+  {
+    "pocco81/auto-save.nvim",
+    lazy = false,
+    enabled = true,
   },
+
 
 }
 
