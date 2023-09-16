@@ -25,14 +25,18 @@ local plugins = {
     enable = true,
   },
   {
-    "glepnir/lspsaga.nvim",
+    "nvimdev/lspsaga.nvim",
     config = function()
-      require("lspsaga").init_lsp_saga {
-        server_filetype_map = {
-          typescript = "typescript",
-        },
-      }
+      require("lspsaga").setup {}
     end,
+    lazy = false,
+  },
+  {
+    "smjonas/inc-rename.nvim",
+    config = function()
+      require("inc_rename").setup()
+    end,
+    lazy = false,
   },
   {
     "jose-elias-alvarez/null-ls.nvim",
@@ -71,21 +75,19 @@ local plugins = {
       }
     end,
     lazy = false,
-  },  
+  },
   {
     "Shatur/neovim-session-manager",
     config = function()
-      require("session_manager").setup({})
+      require("session_manager").setup {}
     end,
-    lazy = false
-  }, 
+    lazy = false,
+  },
   {
     "pocco81/auto-save.nvim",
     lazy = false,
     enabled = true,
   },
-
-
 }
 
 return plugins
