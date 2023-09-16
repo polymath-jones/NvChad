@@ -1,7 +1,7 @@
 ---@type ChadrcConfig
 local M = {}
 
-M.ui = { theme = 'gatekeeper' }
+M.ui = { theme = 'penumbra_dark' }
 M.plugins = 'custom.plugins'
 local opts = { noremap = true ,silent =true}
 
