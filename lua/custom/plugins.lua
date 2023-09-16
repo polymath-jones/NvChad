@@ -12,6 +12,10 @@ local plugins = {
   },
   {
     "williamboman/mason.nvim",
+    config = function()
+      require("mason").setup {}
+    end,
+    lazy = false,
   },
   {
     "f-person/git-blame.nvim",
@@ -46,9 +50,9 @@ local plugins = {
 
       null_ls.setup {
         sources = {
-          null_ls.builtins.diagnostics.eslint_d.with {
-            diagnostics_format = "[eslint] #{m}\n(#{c})",
-          },
+          -- null_ls.builtins.diagnostics.eslint_d.with {
+          --   diagnostics_format = "[eslint] #{m}\n(#{c})",
+          -- },
           null_ls.builtins.diagnostics.fish,
           null_ls.builtins.formatting.stylua,
         },

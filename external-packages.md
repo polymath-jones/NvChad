@@ -1,14 +1,14 @@
      # MASON
 
-      biome
-      eslint_d
-      gopls
-      lua-language-server
-      tailwindcss-language-server
-      typescript-language-server
+     biome
+     eslint_d
+     gopls
+     lua-language-server
+     tailwindcss-language-server
+     typescript-language-server
 
-      # CARGO
+     # BREW
 
-      eslint_d
-      prettier
-      typescript-language-server
+     prettierd
+     ripgrep
+     tree-sitter
